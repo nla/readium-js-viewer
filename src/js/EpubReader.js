@@ -143,7 +143,7 @@ BookmarkData){
         if ($titleEl.length) {
             $titleEl.text(title);
         } else {
-            $('<h2 class="book-title-header"></h2>').insertAfter('.navbar').text(title);
+            $('<h2 class="book-title-header"></h2>').insertAfter('#app-navbar').text(title);
         }
     };
 
@@ -1064,9 +1064,11 @@ BookmarkData){
         var $appContainer = $('#app-container');
         $appContainer.empty();
         $appContainer.append(ReaderBody({strings: Strings, dialogs: Dialogs, keyboard: Keyboard}));
-        $('nav').empty();
-        $('nav').attr("aria-label", Strings.i18n_toolbar);
-        $('nav').append(ReaderNavbar({strings: Strings, dialogs: Dialogs, keyboard: Keyboard}));
+
+        var navBar = $("#app-navbar");
+        navBar.empty();
+        navBar.attr("aria-label", Strings.i18n_toolbar);
+        navBar.append(ReaderNavbar({strings: Strings, dialogs: Dialogs, keyboard: Keyboard}));
         installReaderEventHandlers();
         document.title = "Readium";
         $('#zoom-fit-width a').on('click', setFitWidth);

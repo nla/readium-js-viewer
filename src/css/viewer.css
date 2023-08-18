@@ -76,24 +76,24 @@ direction: rtl;
   left: 30%;
 }
 
-.navbar
+.readium-nav
 {
     z-index: 888;
 }
 
 /* toolbar */
-.navbar .btn-group > .btn{
+.readium-nav .btn-group > .btn{
   border: none;
   border-radius: 0px;
   user-select:none;
   -webkit-user-select: none;
 }
 
-.navbar .btn-group > .btn:hover, .navbar .btn-group > .btn:active, .navbar .btn-group > .btn:focus{
+.readium-nav .btn-group > .btn:hover, .readium-nav .btn-group > .btn:active, .readium-nav .btn-group > .btn:focus{
   box-shadow: none;
 }
 
-.navbar .btn {
+.readium-nav .btn {
   color : #ddd;
   font-size: 16px;
   width: 48px;
@@ -102,7 +102,7 @@ direction: rtl;
     background-color: #4d4d4d;
 }
 
-.navbar
+.readium-nav
 {
   background: #4d4d4d;
   box-shadow: 0px 1px 5px #333;
@@ -111,7 +111,7 @@ direction: rtl;
   margin-bottom: 0px;
 }
 
-.navbar-right
+.readium-nav-right
 {
     overflow: visible;
     height: 0.4em;
@@ -164,7 +164,7 @@ html[data-theme=night-theme] .modal
   background-image: url('../images/glyphicons_136_cogwheel.png');
 }*/
 
-.navbar .icon-logo, .navbar .icon-logo:active{
+.readium-nav .icon-logo, .readium-nav .icon-logo:active{
   background-image: url('../images/readium_logo.png');
   width: 130px; 
   background-size: auto 28px !important;
@@ -304,12 +304,12 @@ html[data-theme=night-theme] #right-page-btn:hover
 }
 
 /* embedded mode styles */
-.embedded .navbar .btn-group > .btn.icon-full-screen, .embedded .navbar .btn-group > .btn.icon-toc{
+.embedded .readium-nav .btn-group > .btn.icon-full-screen, .embedded .readium-nav .btn-group > .btn.icon-toc{
   display:inline-block;
   opacity: 1;
 }
 
-.hide-ui .navbar{
+.hide-ui .readium-nav{
   -webkit-transition: all .2s ease-out;
   opacity:0;
 }
@@ -328,17 +328,17 @@ html[data-theme=night-theme] #right-page-btn:hover
   opacity: 1;
 }
 
-.embedded .navbar .btn-group > .btn.icon-full-screen{
+.embedded .readium-nav .btn-group > .btn.icon-full-screen{
   float: right;
 }
 
 /*
-.embedded .navbar .btn-group > .btn, .embedded .navbar .btn-group > .btn:hover, .embedded .navbar .btn-group > .btn:active, .embedded .navbar .btn-group > .btn:focus{
+.embedded .readium-nav .btn-group > .btn, .embedded .readium-nav .btn-group > .btn:hover, .embedded .readium-nav .btn-group > .btn:active, .embedded .readium-nav .btn-group > .btn:focus{
   background-color: rgba(0,0,0,0.2);
 }
 */
 
-.embedded .navbar{
+.embedded .readium-nav{
   position: absolute;
   top: 0px;
   z-index: 2;
@@ -349,11 +349,11 @@ html[data-theme=night-theme] #right-page-btn:hover
   border-radius: 0px;
 }
 
-/*.embedded .navbar.user-displayed{
+/*.embedded .readium-nav.user-displayed{
   background-color: rgba(0,0,0,0.8);
 }
 
-.embedded .navbar.user-displayed .btn-group > .btn {
+.embedded .readium-nav.user-displayed .btn-group > .btn {
   display: block;
   background-color: transparent;
 }*/
@@ -367,12 +367,12 @@ html[data-theme=night-theme] #right-page-btn:hover
 .embedded #reflowable-content-frame{
   margin: 20px;
 }
-.embedded .navbar .btn {
+.embedded .readium-nav .btn {
   width: 24px;
   height: 24px;
   display: none;
 }
-.embedded .navbar .btn-group > .btn{
+.embedded .readium-nav .btn-group > .btn{
   border-radius: 4px !important;
 }
 /*.embedded .icon-show-hide, .embedded .icon-show-hide:active{
@@ -381,7 +381,7 @@ html[data-theme=night-theme] #right-page-btn:hover
   display: block;
 }*/
 
-/*.embedded .navbar.user-displayed .btn-group .icon-show-hide{
+/*.embedded .readium-nav.user-displayed .btn-group .icon-show-hide{
   background-image: url('../images/white-remove.png');
   background-size: 16px 16px;
 }*/
@@ -406,7 +406,7 @@ html[data-theme=night-theme] #right-page-btn:hover
   background-size: 16px 16px;
 }*/
 
-.embedded .navbar .btn-group > .btn{
+.embedded .readium-nav .btn-group > .btn{
   display:none;
 }
 
@@ -456,10 +456,10 @@ html[data-theme=night-theme] #right-page-btn:hover
   top: 5px;
 }
 
-/*.embedded .navbar-left{
+/*.embedded .readium-nav-left{
   float: left!important;
 }*/
-.embedded .navbar-right{
+.embedded .readium-nav-right{
   float: none!important;
   clear: left;
   width: 100%;
@@ -585,7 +585,7 @@ ul.nav-tabs li:not(.active) button:hover
 }
 
 @media (max-width:768px){
-  .navbar .btn-group > .btn.icon-full-screen
+  .readium-nav .btn-group > .btn.icon-full-screen
   {
     display:none;
   }
